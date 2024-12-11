@@ -8,6 +8,7 @@ resource "aws_instance" "my_instance" {
   key_name               = "LAVANYA"
   associate_public_ip_address = true
   user_data              = file("data.sh")
+  subnet_id = "subnet-02c3f451dbe1c23f3"
   tags = {
     Name = "My public Instance 1"
   }
